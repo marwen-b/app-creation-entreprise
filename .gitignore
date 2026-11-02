@@ -1,0 +1,27 @@
+# Flutter / Dart
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+pubspec.lock
+
+# Le dossier android/ est généré par GitHub Actions (flutter create + tool/patch_android.py)
+/android/
+/ios/
+/web/
+/linux/
+/macos/
+/windows/
+
+# Divers
+.idea/
+.vscode/
+*.iml
+.DS_Store
+*.log
+*.jks
+*.keystore
+key.properties

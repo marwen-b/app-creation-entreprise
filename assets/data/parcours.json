@@ -1,0 +1,2290 @@
+[
+ {
+  "code": "SU",
+  "name": "SUARL",
+  "subtitle": "Société unipersonnelle à responsabilité limitée",
+  "tasks": [
+   {
+    "id": "T01",
+    "phase": "1. Préparer",
+    "title": "Valider votre idée et votre marché",
+    "explanation": "Décrivez en une page votre produit ou service, vos clients cibles, vos concurrents et votre prix. Parlez à au moins 10 clients potentiels.",
+    "why": "Éviter de créer une société pour un projet qui ne trouvera pas de clients.",
+    "organisme": "Vous-même",
+    "demarche": "—",
+    "documents": [
+     "Fiche projet d'une page"
+    ],
+    "cost": "0",
+    "delay": "1 à 2 semaines",
+    "dependsOn": [],
+    "condition": {
+     "q": "Q15",
+     "eq": "idee"
+    },
+    "reminderText": "J+7 après inscription",
+    "offsetDays": 7,
+    "toVerify": false
+   },
+   {
+    "id": "T02",
+    "phase": "1. Préparer",
+    "title": "Établir un budget prévisionnel",
+    "explanation": "Estimez vos dépenses de démarrage, vos charges mensuelles et votre chiffre d'affaires sur 12 mois. Des structures publiques peuvent vous aider gratuitement.",
+    "why": "Fixer le capital, préparer une demande de financement, vérifier la rentabilité.",
+    "organisme": "Vous-même · Espace Entreprendre (APII) · BTS",
+    "demarche": "Guichet",
+    "documents": [
+     "Budget prévisionnel 12 mois"
+    ],
+    "cost": "0",
+    "delay": "1 semaine",
+    "dependsOn": [
+     "T01"
+    ],
+    "condition": {
+     "q": "Q15",
+     "ne": "cree"
+    },
+    "reminderText": "J+14",
+    "offsetDays": 14,
+    "toVerify": true
+   },
+   {
+    "id": "T03",
+    "phase": "1. Préparer",
+    "title": "Obtenir votre identité numérique (Mobile ID)",
+    "explanation": "Les démarches au RNE se font désormais en ligne. Il vous faut une identité numérique ou une signature électronique reconnue pour créer votre compte.",
+    "why": "Sans elle, impossible de déposer le dossier sur la plateforme du RNE.",
+    "organisme": "Opérateur téléphonique / TunTrust",
+    "demarche": "Guichet",
+    "documents": [
+     "CIN",
+     "ligne téléphonique à votre nom"
+    ],
+    "cost": "À vérifier",
+    "delay": "1 à 3 jours",
+    "dependsOn": [],
+    "condition": {
+     "q": "Q14",
+     "eq": "non"
+    },
+    "reminderText": "J+3",
+    "offsetDays": 3,
+    "toVerify": true
+   },
+   {
+    "id": "T04",
+    "phase": "1. Préparer",
+    "title": "Vérifier si votre activité est réglementée",
+    "explanation": "Certaines activités exigent une autorisation préalable, un cahier des charges ou un diplôme. Vérifiez-le avant de rédiger vos statuts.",
+    "why": "Une activité réglementée exercée sans autorisation peut entraîner la fermeture.",
+    "organisme": "Ministère de tutelle · APII",
+    "demarche": "En ligne",
+    "documents": [
+     "Description précise de l'activité"
+    ],
+    "cost": "0",
+    "delay": "1 à 2 jours",
+    "dependsOn": [],
+    "condition": null,
+    "reminderText": "J+3",
+    "offsetDays": 3,
+    "toVerify": false
+   },
+   {
+    "id": "T05",
+    "phase": "2. Choisir et réserver",
+    "title": "Réserver le nom de votre société",
+    "explanation": "Sur la plateforme du RNE, proposez jusqu'à 3 noms. Le nom doit être unique en Tunisie et accompagné de sa traduction en arabe. Vous recevez une attestation de réservation.",
+    "why": "Le nom réservé est exigé pour les statuts et l'ouverture du compte bancaire.",
+    "organisme": "RNE",
+    "demarche": "En ligne",
+    "documents": [
+     "3 propositions de noms + traduction arabe"
+    ],
+    "cost": "0 à 20 (à vérifier)",
+    "delay": "24 à 48 h",
+    "dependsOn": [
+     "T03"
+    ],
+    "condition": null,
+    "reminderText": "J+2",
+    "offsetDays": 2,
+    "toVerify": true
+   },
+   {
+    "id": "T06",
+    "phase": "2. Choisir et réserver",
+    "title": "Trouver l'adresse du siège social",
+    "explanation": "La société doit avoir une adresse officielle : un local loué, un local dont vous êtes propriétaire ou une domiciliation chez un prestataire.",
+    "why": "L'adresse du siège figure dans les statuts et sur tous les documents officiels.",
+    "organisme": "Propriétaire · domiciliataire",
+    "demarche": "—",
+    "documents": [
+     "Contrat de bail, titre de propriété ou attestation de domiciliation"
+    ],
+    "cost": "Selon le loyer",
+    "delay": "1 à 4 semaines",
+    "dependsOn": [],
+    "condition": null,
+    "reminderText": "J+14",
+    "offsetDays": 14,
+    "toVerify": false
+   },
+   {
+    "id": "T07",
+    "phase": "2. Choisir et réserver",
+    "title": "Légaliser et enregistrer le contrat de bail",
+    "explanation": "Faites légaliser les signatures du bail à la municipalité, puis enregistrez-le à la recette des finances. Les frais d'enregistrement sont à la charge du locataire.",
+    "why": "Un bail non enregistré n'est pas accepté comme justificatif du siège.",
+    "organisme": "Municipalité · Recette des finances",
+    "demarche": "Guichet",
+    "documents": [
+     "Contrat de bail signé par les deux parties",
+     "CIN"
+    ],
+    "cost": "À vérifier",
+    "delay": "1 à 2 jours",
+    "dependsOn": [
+     "T06"
+    ],
+    "condition": {
+     "q": "Q8",
+     "eq": "a_louer"
+    },
+    "reminderText": "J+5",
+    "offsetDays": 5,
+    "toVerify": true
+   },
+   {
+    "id": "T08",
+    "phase": "3. Constituer",
+    "title": "Rédiger les statuts de votre SUARL",
+    "explanation": "Les statuts fixent le nom, le siège, l'activité, le capital (au moins 1 000 DT, parts d'au moins 5 DT) et le gérant. Ils doivent mentionner la banque qui reçoit le capital.",
+    "why": "C'est l'acte de naissance de la société.",
+    "organisme": "Vous-même (modèle) · avocat ou expert-comptable",
+    "demarche": "—",
+    "documents": [
+     "Attestation de réservation du nom",
+     "adresse du siège",
+     "montant du capital",
+     "CIN du gérant"
+    ],
+    "cost": "0 (modèle) ou 300 à 800 (avocat)",
+    "delay": "2 à 7 jours",
+    "dependsOn": [
+     "T05",
+     "T06"
+    ],
+    "condition": null,
+    "reminderText": "J+7",
+    "offsetDays": 7,
+    "toVerify": true
+   },
+   {
+    "id": "T09",
+    "phase": "3. Constituer",
+    "title": "Obtenir l'autorisation ou déposer le cahier des charges",
+    "explanation": "Si votre activité est réglementée, déposez la demande d'autorisation ou le cahier des charges signé auprès du ministère concerné.",
+    "why": "L'autorisation est demandée au moment de l'immatriculation.",
+    "organisme": "Ministère de tutelle",
+    "demarche": "Selon activité",
+    "documents": [
+     "Selon activité (diplôme, plan du local, attestations)"
+    ],
+    "cost": "Selon activité",
+    "delay": "Selon activité",
+    "dependsOn": [
+     "T04"
+    ],
+    "condition": {
+     "q": "Q3",
+     "in": [
+      "oui",
+      "nsp"
+     ]
+    },
+    "reminderText": "J+15",
+    "offsetDays": 15,
+    "toVerify": true
+   },
+   {
+    "id": "T10",
+    "phase": "3. Constituer",
+    "title": "Ouvrir le compte bancaire et déposer le capital",
+    "explanation": "Déposez le capital sur un compte bloqué au nom de la société en formation. La banque vous remet une attestation de dépôt.",
+    "why": "L'attestation de dépôt du capital fait partie du dossier d'immatriculation.",
+    "organisme": "Banque",
+    "demarche": "Guichet",
+    "documents": [
+     "Statuts (projet)",
+     "CIN",
+     "attestation de réservation du nom",
+     "capital"
+    ],
+    "cost": "100 à 200 (frais bancaires)",
+    "delay": "1 à 3 jours",
+    "dependsOn": [
+     "T08"
+    ],
+    "condition": null,
+    "reminderText": "J+5",
+    "offsetDays": 5,
+    "toVerify": true
+   },
+   {
+    "id": "T11",
+    "phase": "3. Constituer",
+    "title": "Enregistrer les statuts à la recette des finances",
+    "explanation": "Les statuts signés sont enregistrés à la recette des finances. Si le gérant n'est pas nommé dans les statuts, un procès-verbal de nomination est aussi enregistré.",
+    "why": "L'enregistrement donne une date officielle aux statuts.",
+    "organisme": "Recette des finances",
+    "demarche": "Guichet",
+    "documents": [
+     "Statuts signés (exemplaires originaux)",
+     "PV de nomination du gérant si besoin"
+    ],
+    "cost": "150 (à vérifier)",
+    "delay": "24 h",
+    "dependsOn": [
+     "T10"
+    ],
+    "condition": null,
+    "reminderText": "J+3",
+    "offsetDays": 3,
+    "toVerify": true
+   },
+   {
+    "id": "T12",
+    "phase": "4. Immatriculer",
+    "title": "Obtenir votre matricule fiscal (déclaration d'existence)",
+    "explanation": "La déclaration d'existence fait naître la société pour l'administration fiscale. Vous obtenez la carte d'identification fiscale. Le parcours est en cours d'unification avec la plateforme RNE.",
+    "why": "Le matricule fiscal est obligatoire pour facturer et pour l'immatriculation.",
+    "organisme": "Administration fiscale (via plateforme RNE)",
+    "demarche": "En ligne",
+    "documents": [
+     "Statuts enregistrés",
+     "justificatif du siège",
+     "CIN du gérant"
+    ],
+    "cost": "À vérifier",
+    "delay": "24 à 48 h",
+    "dependsOn": [
+     "T11"
+    ],
+    "condition": null,
+    "reminderText": "J+3",
+    "offsetDays": 3,
+    "toVerify": true
+   },
+   {
+    "id": "T13",
+    "phase": "4. Immatriculer",
+    "title": "Immatriculer la société au RNE",
+    "explanation": "Déposez le dossier complet sur la plateforme du RNE. Depuis le 1er juillet 2026, le dépôt se fait uniquement en ligne. Vous obtenez l'identifiant unique de la société.",
+    "why": "L'immatriculation donne à la société sa personnalité juridique.",
+    "organisme": "RNE",
+    "demarche": "En ligne",
+    "documents": [
+     "Statuts enregistrés",
+     "PV de nomination si besoin",
+     "déclaration d'existence et carte fiscale",
+     "justificatif du siège",
+     "CIN du gérant",
+     "attestation de dépôt du capital",
+     "autorisation si activité réglementée"
+    ],
+    "cost": "50 (à vérifier)",
+    "delay": "24 à 48 h",
+    "dependsOn": [
+     "T12",
+     "T09"
+    ],
+    "condition": null,
+    "reminderText": "J+2",
+    "offsetDays": 2,
+    "toVerify": true
+   },
+   {
+    "id": "T14",
+    "phase": "4. Immatriculer",
+    "title": "Déclarer le bénéficiaire effectif",
+    "explanation": "Indiquez au RNE qui contrôle réellement la société. Pour une SUARL détenue par une personne, c'est en général l'associé unique.",
+    "why": "Obligation légale de transparence ; son absence bloque le dossier.",
+    "organisme": "RNE",
+    "demarche": "En ligne",
+    "documents": [
+     "Identité du bénéficiaire"
+    ],
+    "cost": "0 (à vérifier)",
+    "delay": "Le jour même",
+    "dependsOn": [
+     "T13"
+    ],
+    "condition": null,
+    "reminderText": "J+1",
+    "offsetDays": 1,
+    "toVerify": true
+   },
+   {
+    "id": "T15",
+    "phase": "4. Immatriculer",
+    "title": "Vérifier la publication de l'avis de constitution",
+    "explanation": "La création est publiée au bulletin officiel du RNE. Vérifiez que la publication est faite et conservez sa référence.",
+    "why": "La publication rend la société opposable aux tiers.",
+    "organisme": "RNE (bulletin officiel)",
+    "demarche": "En ligne",
+    "documents": [
+     "Référence de publication"
+    ],
+    "cost": "À vérifier",
+    "delay": "Quelques jours",
+    "dependsOn": [
+     "T13"
+    ],
+    "condition": null,
+    "reminderText": "J+7",
+    "offsetDays": 7,
+    "toVerify": true
+   },
+   {
+    "id": "T16",
+    "phase": "4. Immatriculer",
+    "title": "Télécharger l'extrait RNE",
+    "explanation": "L'extrait du registre prouve l'existence de la société. Il est demandé par la banque, les clients et les administrations.",
+    "why": "Nécessaire pour débloquer le capital et ouvrir le compte définitif.",
+    "organisme": "RNE",
+    "demarche": "En ligne",
+    "documents": [],
+    "cost": "5 par extrait (à vérifier)",
+    "delay": "Immédiat",
+    "dependsOn": [
+     "T13"
+    ],
+    "condition": null,
+    "reminderText": "J+1",
+    "offsetDays": 1,
+    "toVerify": true
+   },
+   {
+    "id": "T17",
+    "phase": "4. Immatriculer",
+    "title": "Affilier le gérant à la CNSS",
+    "explanation": "Le gérant doit être couvert par la sécurité sociale. Le régime dépend de sa situation (gérant associé unique, salarié ailleurs…).",
+    "why": "Couverture maladie et retraite du gérant ; obligation légale.",
+    "organisme": "CNSS",
+    "demarche": "Guichet / en ligne",
+    "documents": [
+     "CIN",
+     "extrait RNE",
+     "matricule fiscal"
+    ],
+    "cost": "Cotisations selon régime",
+    "delay": "1 semaine",
+    "dependsOn": [
+     "T16"
+    ],
+    "condition": null,
+    "reminderText": "J+15",
+    "offsetDays": 15,
+    "toVerify": true
+   },
+   {
+    "id": "T18",
+    "phase": "4. Immatriculer",
+    "title": "Affilier la société à la CNSS comme employeur",
+    "explanation": "Dès le premier salarié, la société s'affilie à la CNSS et déclare son personnel. La demande se dépose dans le mois qui suit le premier recrutement.",
+    "why": "Obligation légale ; protège vos salariés.",
+    "organisme": "CNSS",
+    "demarche": "Guichet / en ligne",
+    "documents": [
+     "Demande d'affiliation",
+     "extrait RNE",
+     "liste du personnel",
+     "contrats de travail"
+    ],
+    "cost": "0",
+    "delay": "1 semaine",
+    "dependsOn": [
+     "T16"
+    ],
+    "condition": {
+     "q": "Q10",
+     "ne": "non"
+    },
+    "reminderText": "J+30 après 1re embauche",
+    "offsetDays": 30,
+    "toVerify": true
+   },
+   {
+    "id": "T19",
+    "phase": "4. Immatriculer",
+    "title": "Obtenir le code en douane",
+    "explanation": "Si vous importez ou exportez, la société doit obtenir un code en douane.",
+    "why": "Sans code en douane, pas de dédouanement de marchandises.",
+    "organisme": "Douane",
+    "demarche": "Guichet / en ligne",
+    "documents": [
+     "Extrait RNE",
+     "carte d'identification fiscale"
+    ],
+    "cost": "À vérifier",
+    "delay": "À vérifier",
+    "dependsOn": [
+     "T16"
+    ],
+    "condition": {
+     "q": "Q11",
+     "ne": "non"
+    },
+    "reminderText": "J+7",
+    "offsetDays": 7,
+    "toVerify": true
+   },
+   {
+    "id": "T20",
+    "phase": "5. Démarrer",
+    "title": "Débloquer le capital",
+    "explanation": "Présentez l'extrait RNE à la banque pour libérer le capital déposé et passer au compte courant de la société.",
+    "why": "Le capital devient utilisable pour l'activité.",
+    "organisme": "Banque",
+    "demarche": "Guichet",
+    "documents": [
+     "Extrait RNE"
+    ],
+    "cost": "0",
+    "delay": "1 à 3 jours",
+    "dependsOn": [
+     "T16"
+    ],
+    "condition": null,
+    "reminderText": "J+3",
+    "offsetDays": 3,
+    "toVerify": true
+   },
+   {
+    "id": "T21",
+    "phase": "5. Démarrer",
+    "title": "Organiser la comptabilité et la facturation",
+    "explanation": "Choisissez un comptable, préparez vos modèles de factures avec les mentions obligatoires (nom, matricule fiscal, identifiant RNE) et un classement des pièces.",
+    "why": "Une SUARL doit tenir une comptabilité et facturer avec les bonnes mentions.",
+    "organisme": "Expert-comptable",
+    "demarche": "—",
+    "documents": [
+     "Modèle de facture",
+     "contrat avec le comptable"
+    ],
+    "cost": "Honoraires selon comptable",
+    "delay": "1 semaine",
+    "dependsOn": [
+     "T16"
+    ],
+    "condition": null,
+    "reminderText": "J+7",
+    "offsetDays": 7,
+    "toVerify": true
+   },
+   {
+    "id": "T22",
+    "phase": "5. Démarrer",
+    "title": "Noter vos premières échéances fiscales",
+    "explanation": "La société déclare ses impôts chaque mois et chaque année. Notez les dates avec votre comptable ; l'application pourra vous les rappeler.",
+    "why": "Un retard de déclaration entraîne des pénalités.",
+    "organisme": "Administration fiscale",
+    "demarche": "En ligne",
+    "documents": [],
+    "cost": "0",
+    "delay": "—",
+    "dependsOn": [
+     "T12"
+    ],
+    "condition": null,
+    "reminderText": "Chaque mois (date à confirmer)",
+    "offsetDays": null,
+    "toVerify": true
+   },
+   {
+    "id": "T23",
+    "phase": "5. Démarrer",
+    "title": "Souscrire les assurances nécessaires",
+    "explanation": "Assurance du local, responsabilité civile professionnelle et, selon l'activité, assurances spécifiques.",
+    "why": "Protéger la société et le gérant en cas de sinistre ou de litige.",
+    "organisme": "Assureur",
+    "demarche": "—",
+    "documents": [
+     "Extrait RNE",
+     "contrat de bail"
+    ],
+    "cost": "Selon contrat",
+    "delay": "1 semaine",
+    "dependsOn": [
+     "T16"
+    ],
+    "condition": {
+     "any": [
+      {
+       "q": "Q8",
+       "ne": "domicile"
+      },
+      {
+       "q": "Q9",
+       "eq": "oui"
+      }
+     ]
+    },
+    "reminderText": "J+14",
+    "offsetDays": 14,
+    "toVerify": true
+   },
+   {
+    "id": "T24",
+    "phase": "5. Démarrer",
+    "title": "Vérifier les conditions d'ouverture au public",
+    "explanation": "Si vous recevez du public, vérifiez les exigences de sécurité (protection civile), d'hygiène et les autorisations municipales.",
+    "why": "Une ouverture sans conformité peut entraîner une fermeture administrative.",
+    "organisme": "Municipalité · Protection civile",
+    "demarche": "Guichet",
+    "documents": [
+     "Plan du local",
+     "attestations selon activité"
+    ],
+    "cost": "À vérifier",
+    "delay": "À vérifier",
+    "dependsOn": [
+     "T07"
+    ],
+    "condition": {
+     "q": "Q9",
+     "eq": "oui"
+    },
+    "reminderText": "J+14",
+    "offsetDays": 14,
+    "toVerify": true
+   },
+   {
+    "id": "T25",
+    "phase": "5. Démarrer",
+    "title": "Demander le label Startup Act",
+    "explanation": "Si votre projet est innovant, demandez le label startup. Il ouvre droit à des avantages fiscaux et sociaux.",
+    "why": "Accès aux avantages de la loi n° 2018-20.",
+    "organisme": "Startup Tunisia",
+    "demarche": "En ligne",
+    "documents": [
+     "Extrait RNE",
+     "présentation du projet"
+    ],
+    "cost": "0",
+    "delay": "À vérifier",
+    "dependsOn": [
+     "T16"
+    ],
+    "condition": {
+     "q": "Q12",
+     "eq": "oui"
+    },
+    "reminderText": "J+30",
+    "offsetDays": 30,
+    "toVerify": true
+   }
+  ]
+ },
+ {
+  "code": "SA",
+  "name": "SARL",
+  "subtitle": "Société à responsabilité limitée",
+  "tasks": [
+   {
+    "id": "SA01",
+    "phase": "1. Préparer",
+    "title": "Valider le projet et le budget entre associés",
+    "explanation": "Mettez-vous d'accord sur l'activité, le budget prévisionnel sur 12 mois, le rôle de chacun et l'apport de chaque associé.",
+    "why": "Les désaccords entre associés sont une cause fréquente d'échec.",
+    "organisme": "Associés",
+    "demarche": "—",
+    "documents": [
+     "Fiche projet",
+     "budget prévisionnel",
+     "répartition des apports"
+    ],
+    "cost": "0",
+    "delay": "1 à 2 semaines",
+    "dependsOn": [],
+    "condition": {
+     "q": "Q15",
+     "ne": "cree"
+    },
+    "reminderText": "J+7",
+    "offsetDays": 7,
+    "toVerify": true
+   },
+   {
+    "id": "SA02",
+    "phase": "1. Préparer",
+    "title": "Rédiger un pacte d'associés (recommandé)",
+    "explanation": "Un pacte d'associés précise ce que les statuts ne disent pas : prise de décision, départ d'un associé, rémunération, non-concurrence.",
+    "why": "Prévenir les conflits avant qu'ils n'arrivent.",
+    "organisme": "Associés · avocat",
+    "demarche": "—",
+    "documents": [
+     "Projet de pacte"
+    ],
+    "cost": "0 (modèle) ou honoraires d'avocat",
+    "delay": "1 à 2 semaines",
+    "dependsOn": [
+     "SA01"
+    ],
+    "condition": null,
+    "reminderText": "J+14",
+    "offsetDays": 14,
+    "toVerify": true
+   },
+   {
+    "id": "SA03",
+    "phase": "1. Préparer",
+    "title": "Vérifier si votre activité est réglementée",
+    "explanation": "Certaines activités exigent une autorisation préalable, un cahier des charges ou un diplôme. Vérifiez-le avant de rédiger les statuts.",
+    "why": "Une activité réglementée exercée sans autorisation peut entraîner la fermeture.",
+    "organisme": "Ministère de tutelle · APII",
+    "demarche": "En ligne",
+    "documents": [
+     "Description précise de l'activité"
+    ],
+    "cost": "0",
+    "delay": "1 à 2 jours",
+    "dependsOn": [],
+    "condition": null,
+    "reminderText": "J+3",
+    "offsetDays": 3,
+    "toVerify": false
+   },
+   {
+    "id": "SA04",
+    "phase": "1. Préparer",
+    "title": "Obtenir l'identité numérique du gérant",
+    "explanation": "Le dépôt au RNE se fait en ligne. Le gérant, qui signera les démarches, doit avoir une identité numérique ou une signature électronique reconnue.",
+    "why": "Sans elle, impossible de déposer le dossier en ligne.",
+    "organisme": "Opérateur téléphonique / TunTrust",
+    "demarche": "Guichet",
+    "documents": [
+     "CIN du gérant",
+     "ligne téléphonique à son nom"
+    ],
+    "cost": "À vérifier",
+    "delay": "1 à 3 jours",
+    "dependsOn": [],
+    "condition": {
+     "q": "Q14",
+     "eq": "non"
+    },
+    "reminderText": "J+3",
+    "offsetDays": 3,
+    "toVerify": true
+   },
+   {
+    "id": "SA05",
+    "phase": "2. Choisir et réserver",
+    "title": "Réserver le nom de la société",
+    "explanation": "Sur la plateforme du RNE, proposez jusqu'à 3 noms avec leur traduction en arabe. Vous recevez une attestation de réservation.",
+    "why": "Le nom réservé est exigé pour les statuts et la banque.",
+    "organisme": "RNE",
+    "demarche": "En ligne",
+    "documents": [
+     "3 propositions de noms + traduction arabe"
+    ],
+    "cost": "0 à 20 (à vérifier)",
+    "delay": "24 à 48 h",
+    "dependsOn": [
+     "SA04"
+    ],
+    "condition": null,
+    "reminderText": "J+2",
+    "offsetDays": 2,
+    "toVerify": true
+   },
+   {
+    "id": "SA06",
+    "phase": "2. Choisir et réserver",
+    "title": "Trouver l'adresse du siège social",
+    "explanation": "La société doit avoir une adresse officielle : local loué, local d'un associé ou domiciliation.",
+    "why": "L'adresse du siège figure dans les statuts et sur tous les documents officiels.",
+    "organisme": "Propriétaire · domiciliataire",
+    "demarche": "—",
+    "documents": [
+     "Contrat de bail, titre de propriété ou attestation de domiciliation"
+    ],
+    "cost": "Selon le loyer",
+    "delay": "1 à 4 semaines",
+    "dependsOn": [],
+    "condition": null,
+    "reminderText": "J+14",
+    "offsetDays": 14,
+    "toVerify": false
+   },
+   {
+    "id": "SA07",
+    "phase": "2. Choisir et réserver",
+    "title": "Légaliser et enregistrer le contrat de bail",
+    "explanation": "Faites légaliser les signatures du bail à la municipalité, puis enregistrez-le à la recette des finances.",
+    "why": "Un bail non enregistré n'est pas accepté comme justificatif du siège.",
+    "organisme": "Municipalité · Recette des finances",
+    "demarche": "Guichet",
+    "documents": [
+     "Contrat de bail signé",
+     "CIN du gérant"
+    ],
+    "cost": "À vérifier",
+    "delay": "1 à 2 jours",
+    "dependsOn": [
+     "SA06"
+    ],
+    "condition": {
+     "q": "Q8",
+     "eq": "a_louer"
+    },
+    "reminderText": "J+5",
+    "offsetDays": 5,
+    "toVerify": true
+   },
+   {
+    "id": "SA08",
+    "phase": "3. Constituer",
+    "title": "Rédiger les statuts de la SARL",
+    "explanation": "Les statuts fixent le nom, le siège, l'activité, le capital (au moins 1 000 DT, parts d'au moins 5 DT), la répartition des parts entre associés et le gérant. Ils mentionnent la banque qui reçoit le capital.",
+    "why": "C'est l'acte de naissance de la société et la règle du jeu entre associés.",
+    "organisme": "Associés (modèle) · avocat ou expert-comptable",
+    "demarche": "—",
+    "documents": [
+     "Attestation de réservation",
+     "adresse du siège",
+     "CIN de chaque associé",
+     "répartition des parts"
+    ],
+    "cost": "0 (modèle) ou 300 à 800 (avocat)",
+    "delay": "2 à 7 jours",
+    "dependsOn": [
+     "SA05",
+     "SA06"
+    ],
+    "condition": null,
+    "reminderText": "J+7",
+    "offsetDays": 7,
+    "toVerify": true
+   },
+   {
+    "id": "SA09",
+    "phase": "3. Constituer",
+    "title": "Rédiger le procès-verbal de nomination du gérant",
+    "explanation": "Si le gérant n'est pas désigné dans les statuts, les associés le nomment dans un procès-verbal signé.",
+    "why": "Le PV donne au gérant le pouvoir d'agir au nom de la société.",
+    "organisme": "Associés",
+    "demarche": "—",
+    "documents": [
+     "Projet de PV",
+     "CIN du gérant"
+    ],
+    "cost": "0",
+    "delay": "1 jour",
+    "dependsOn": [
+     "SA08"
+    ],
+    "condition": null,
+    "reminderText": "J+2",
+    "offsetDays": 2,
+    "toVerify": false
+   },
+   {
+    "id": "SA10",
+    "phase": "3. Constituer",
+    "title": "Obtenir l'autorisation ou déposer le cahier des charges",
+    "explanation": "Si l'activité est réglementée, déposez la demande d'autorisation ou le cahier des charges signé auprès du ministère concerné.",
+    "why": "L'autorisation est demandée au moment de l'immatriculation.",
+    "organisme": "Ministère de tutelle",
+    "demarche": "Selon activité",
+    "documents": [
+     "Selon activité (diplôme, plan du local, attestations)"
+    ],
+    "cost": "Selon activité",
+    "delay": "Selon activité",
+    "dependsOn": [
+     "SA03"
+    ],
+    "condition": {
+     "q": "Q3",
+     "in": [
+      "oui",
+      "nsp"
+     ]
+    },
+    "reminderText": "J+15",
+    "offsetDays": 15,
+    "toVerify": true
+   },
+   {
+    "id": "SA11",
+    "phase": "3. Constituer",
+    "title": "Ouvrir le compte et déposer le capital",
+    "explanation": "Chaque associé verse son apport sur un compte bloqué au nom de la société en formation. La banque délivre une attestation de dépôt.",
+    "why": "L'attestation de dépôt du capital fait partie du dossier d'immatriculation.",
+    "organisme": "Banque",
+    "demarche": "Guichet",
+    "documents": [
+     "Statuts (projet)",
+     "CIN de chaque associé",
+     "attestation de réservation",
+     "apports"
+    ],
+    "cost": "100 à 200 (frais bancaires)",
+    "delay": "1 à 3 jours",
+    "dependsOn": [
+     "SA08"
+    ],
+    "condition": null,
+    "reminderText": "J+5",
+    "offsetDays": 5,
+    "toVerify": true
+   },
+   {
+    "id": "SA12",
+    "phase": "3. Constituer",
+    "title": "Signer et enregistrer les statuts à la recette des finances",
+    "explanation": "Tous les associés signent les statuts. Ils sont ensuite enregistrés à la recette des finances, avec le PV de nomination du gérant si besoin.",
+    "why": "L'enregistrement donne une date officielle aux statuts.",
+    "organisme": "Recette des finances",
+    "demarche": "Guichet",
+    "documents": [
+     "Statuts signés par tous les associés",
+     "PV de nomination si besoin"
+    ],
+    "cost": "150 (à vérifier)",
+    "delay": "24 h",
+    "dependsOn": [
+     "SA09",
+     "SA11"
+    ],
+    "condition": null,
+    "reminderText": "J+3",
+    "offsetDays": 3,
+    "toVerify": true
+   },
+   {
+    "id": "SA13",
+    "phase": "4. Immatriculer",
+    "title": "Obtenir le matricule fiscal (déclaration d'existence)",
+    "explanation": "La déclaration d'existence inscrit la société auprès des impôts et donne la carte d'identification fiscale. Le parcours est en cours d'unification avec la plateforme RNE.",
+    "why": "Le matricule fiscal est obligatoire pour facturer et pour l'immatriculation.",
+    "organisme": "Administration fiscale (via plateforme RNE)",
+    "demarche": "En ligne",
+    "documents": [
+     "Statuts enregistrés",
+     "justificatif du siège",
+     "CIN du gérant"
+    ],
+    "cost": "À vérifier",
+    "delay": "24 à 48 h",
+    "dependsOn": [
+     "SA12"
+    ],
+    "condition": null,
+    "reminderText": "J+3",
+    "offsetDays": 3,
+    "toVerify": true
+   },
+   {
+    "id": "SA14",
+    "phase": "4. Immatriculer",
+    "title": "Immatriculer la société au RNE",
+    "explanation": "Déposez le dossier complet sur la plateforme du RNE. Depuis le 1er juillet 2026, le dépôt se fait uniquement en ligne.",
+    "why": "L'immatriculation donne à la société sa personnalité juridique.",
+    "organisme": "RNE",
+    "demarche": "En ligne",
+    "documents": [
+     "Statuts enregistrés",
+     "PV de nomination si besoin",
+     "carte fiscale",
+     "justificatif du siège",
+     "CIN du gérant",
+     "attestation de dépôt du capital",
+     "autorisation si besoin"
+    ],
+    "cost": "50 (à vérifier)",
+    "delay": "24 à 48 h",
+    "dependsOn": [
+     "SA13",
+     "SA10"
+    ],
+    "condition": null,
+    "reminderText": "J+2",
+    "offsetDays": 2,
+    "toVerify": true
+   },
+   {
+    "id": "SA15",
+    "phase": "4. Immatriculer",
+    "title": "Déclarer les bénéficiaires effectifs",
+    "explanation": "Indiquez au RNE les personnes qui contrôlent réellement la société, en général les associés qui détiennent une part importante du capital.",
+    "why": "Obligation légale de transparence ; son absence bloque le dossier.",
+    "organisme": "RNE",
+    "demarche": "En ligne",
+    "documents": [
+     "Identité de chaque bénéficiaire",
+     "répartition des parts"
+    ],
+    "cost": "0 (à vérifier)",
+    "delay": "Le jour même",
+    "dependsOn": [
+     "SA14"
+    ],
+    "condition": null,
+    "reminderText": "J+1",
+    "offsetDays": 1,
+    "toVerify": true
+   },
+   {
+    "id": "SA16",
+    "phase": "4. Immatriculer",
+    "title": "Vérifier la publication de l'avis de constitution",
+    "explanation": "La création est publiée au bulletin officiel du RNE. Vérifiez la publication et conservez sa référence.",
+    "why": "La publication rend la société opposable aux tiers.",
+    "organisme": "RNE (bulletin officiel)",
+    "demarche": "En ligne",
+    "documents": [
+     "Référence de publication"
+    ],
+    "cost": "À vérifier",
+    "delay": "Quelques jours",
+    "dependsOn": [
+     "SA14"
+    ],
+    "condition": null,
+    "reminderText": "J+7",
+    "offsetDays": 7,
+    "toVerify": true
+   },
+   {
+    "id": "SA17",
+    "phase": "4. Immatriculer",
+    "title": "Télécharger l'extrait RNE",
+    "explanation": "L'extrait du registre prouve l'existence de la société.",
+    "why": "Nécessaire pour débloquer le capital et ouvrir le compte définitif.",
+    "organisme": "RNE",
+    "demarche": "En ligne",
+    "documents": [],
+    "cost": "5 par extrait (à vérifier)",
+    "delay": "Immédiat",
+    "dependsOn": [
+     "SA14"
+    ],
+    "condition": null,
+    "reminderText": "J+1",
+    "offsetDays": 1,
+    "toVerify": true
+   },
+   {
+    "id": "SA18",
+    "phase": "4. Immatriculer",
+    "title": "Affilier le gérant à la CNSS",
+    "explanation": "Le régime du gérant dépend de sa situation : gérant majoritaire ou minoritaire, salarié ou non. Faites le point avec votre comptable.",
+    "why": "Couverture maladie et retraite du gérant ; obligation légale.",
+    "organisme": "CNSS",
+    "demarche": "Guichet / en ligne",
+    "documents": [
+     "CIN",
+     "extrait RNE",
+     "matricule fiscal"
+    ],
+    "cost": "Cotisations selon régime",
+    "delay": "1 semaine",
+    "dependsOn": [
+     "SA17"
+    ],
+    "condition": null,
+    "reminderText": "J+15",
+    "offsetDays": 15,
+    "toVerify": true
+   },
+   {
+    "id": "SA19",
+    "phase": "4. Immatriculer",
+    "title": "Affilier la société à la CNSS comme employeur",
+    "explanation": "Dès le premier salarié, la société s'affilie à la CNSS dans le mois qui suit l'embauche.",
+    "why": "Obligation légale ; protège vos salariés.",
+    "organisme": "CNSS",
+    "demarche": "Guichet / en ligne",
+    "documents": [
+     "Demande d'affiliation",
+     "extrait RNE",
+     "liste du personnel",
+     "contrats"
+    ],
+    "cost": "0",
+    "delay": "1 semaine",
+    "dependsOn": [
+     "SA17"
+    ],
+    "condition": {
+     "q": "Q10",
+     "ne": "non"
+    },
+    "reminderText": "J+30 après 1re embauche",
+    "offsetDays": 30,
+    "toVerify": true
+   },
+   {
+    "id": "SA20",
+    "phase": "4. Immatriculer",
+    "title": "Obtenir le code en douane",
+    "explanation": "Si la société importe ou exporte, elle doit obtenir un code en douane.",
+    "why": "Sans code en douane, pas de dédouanement de marchandises.",
+    "organisme": "Douane",
+    "demarche": "Guichet / en ligne",
+    "documents": [
+     "Extrait RNE",
+     "carte d'identification fiscale"
+    ],
+    "cost": "À vérifier",
+    "delay": "À vérifier",
+    "dependsOn": [
+     "SA17"
+    ],
+    "condition": {
+     "q": "Q11",
+     "ne": "non"
+    },
+    "reminderText": "J+7",
+    "offsetDays": 7,
+    "toVerify": true
+   },
+   {
+    "id": "SA21",
+    "phase": "5. Démarrer",
+    "title": "Débloquer le capital",
+    "explanation": "Présentez l'extrait RNE à la banque pour libérer le capital et passer au compte courant de la société.",
+    "why": "Le capital devient utilisable pour l'activité.",
+    "organisme": "Banque",
+    "demarche": "Guichet",
+    "documents": [
+     "Extrait RNE"
+    ],
+    "cost": "0",
+    "delay": "1 à 3 jours",
+    "dependsOn": [
+     "SA17"
+    ],
+    "condition": null,
+    "reminderText": "J+3",
+    "offsetDays": 3,
+    "toVerify": true
+   },
+   {
+    "id": "SA22",
+    "phase": "5. Démarrer",
+    "title": "Organiser la comptabilité et la facturation",
+    "explanation": "Choisissez un comptable, préparez un modèle de facture conforme et un classement des pièces.",
+    "why": "Une SARL doit tenir une comptabilité et facturer avec les bonnes mentions.",
+    "organisme": "Expert-comptable",
+    "demarche": "—",
+    "documents": [
+     "Modèle de facture",
+     "contrat avec le comptable"
+    ],
+    "cost": "Honoraires selon comptable",
+    "delay": "1 semaine",
+    "dependsOn": [
+     "SA17"
+    ],
+    "condition": null,
+    "reminderText": "J+7",
+    "offsetDays": 7,
+    "toVerify": true
+   },
+   {
+    "id": "SA23",
+    "phase": "5. Démarrer",
+    "title": "Noter les échéances fiscales et l'assemblée annuelle",
+    "explanation": "La société déclare ses impôts chaque mois et chaque année. Les associés approuvent les comptes une fois par an en assemblée.",
+    "why": "Retards et oublis entraînent des pénalités.",
+    "organisme": "Administration fiscale · associés",
+    "demarche": "En ligne",
+    "documents": [],
+    "cost": "0",
+    "delay": "—",
+    "dependsOn": [
+     "SA13"
+    ],
+    "condition": null,
+    "reminderText": "Chaque mois + assemblée annuelle (date à confirmer)",
+    "offsetDays": null,
+    "toVerify": true
+   },
+   {
+    "id": "SA24",
+    "phase": "5. Démarrer",
+    "title": "Souscrire les assurances nécessaires",
+    "explanation": "Assurance du local, responsabilité civile professionnelle et assurances propres à l'activité.",
+    "why": "Protéger la société en cas de sinistre ou de litige.",
+    "organisme": "Assureur",
+    "demarche": "—",
+    "documents": [
+     "Extrait RNE",
+     "contrat de bail"
+    ],
+    "cost": "Selon contrat",
+    "delay": "1 semaine",
+    "dependsOn": [
+     "SA17"
+    ],
+    "condition": {
+     "any": [
+      {
+       "q": "Q8",
+       "ne": "domicile"
+      },
+      {
+       "q": "Q9",
+       "eq": "oui"
+      }
+     ]
+    },
+    "reminderText": "J+14",
+    "offsetDays": 14,
+    "toVerify": true
+   },
+   {
+    "id": "SA25",
+    "phase": "5. Démarrer",
+    "title": "Vérifier les conditions d'ouverture au public",
+    "explanation": "Si la société reçoit du public, vérifiez les exigences de sécurité (protection civile), d'hygiène et les autorisations municipales.",
+    "why": "Une ouverture sans conformité peut entraîner une fermeture administrative.",
+    "organisme": "Municipalité · Protection civile",
+    "demarche": "Guichet",
+    "documents": [
+     "Plan du local",
+     "attestations selon activité"
+    ],
+    "cost": "À vérifier",
+    "delay": "À vérifier",
+    "dependsOn": [
+     "SA07"
+    ],
+    "condition": {
+     "q": "Q9",
+     "eq": "oui"
+    },
+    "reminderText": "J+14",
+    "offsetDays": 14,
+    "toVerify": true
+   },
+   {
+    "id": "SA26",
+    "phase": "5. Démarrer",
+    "title": "Demander le label Startup Act",
+    "explanation": "Si le projet est innovant, demandez le label startup pour accéder à des avantages fiscaux et sociaux.",
+    "why": "Accès aux avantages de la loi n° 2018-20.",
+    "organisme": "Startup Tunisia",
+    "demarche": "En ligne",
+    "documents": [
+     "Extrait RNE",
+     "présentation du projet"
+    ],
+    "cost": "0",
+    "delay": "À vérifier",
+    "dependsOn": [
+     "SA17"
+    ],
+    "condition": {
+     "q": "Q12",
+     "eq": "oui"
+    },
+    "reminderText": "J+30",
+    "offsetDays": 30,
+    "toVerify": true
+   }
+  ]
+ },
+ {
+  "code": "EI",
+  "name": "Entreprise individuelle",
+  "subtitle": "Personne physique, sans capital",
+  "tasks": [
+   {
+    "id": "EI01",
+    "phase": "1. Préparer",
+    "title": "Valider votre idée et votre budget",
+    "explanation": "Décrivez votre activité, vos clients, vos prix, et estimez vos dépenses de démarrage et vos charges mensuelles sur 12 mois.",
+    "why": "Vérifier que le projet est rentable avant de vous engager.",
+    "organisme": "Vous-même · Espace Entreprendre · BTS",
+    "demarche": "—",
+    "documents": [
+     "Fiche projet",
+     "budget prévisionnel 12 mois"
+    ],
+    "cost": "0",
+    "delay": "1 à 2 semaines",
+    "dependsOn": [],
+    "condition": {
+     "q": "Q15",
+     "ne": "cree"
+    },
+    "reminderText": "J+7",
+    "offsetDays": 7,
+    "toVerify": true
+   },
+   {
+    "id": "EI02",
+    "phase": "1. Préparer",
+    "title": "Vérifier si votre activité est réglementée",
+    "explanation": "Certaines activités exigent une autorisation, un cahier des charges, un diplôme ou une inscription à un ordre professionnel.",
+    "why": "Une activité réglementée exercée sans autorisation peut entraîner la fermeture.",
+    "organisme": "Ministère de tutelle · APII",
+    "demarche": "En ligne",
+    "documents": [
+     "Description précise de l'activité"
+    ],
+    "cost": "0",
+    "delay": "1 à 2 jours",
+    "dependsOn": [],
+    "condition": null,
+    "reminderText": "J+3",
+    "offsetDays": 3,
+    "toVerify": false
+   },
+   {
+    "id": "EI03",
+    "phase": "1. Préparer",
+    "title": "Obtenir votre identité numérique (Mobile ID)",
+    "explanation": "Les démarches fiscales et au RNE se font désormais en ligne et demandent une identité numérique.",
+    "why": "Indispensable pour la patente en ligne et l'immatriculation.",
+    "organisme": "Opérateur téléphonique / TunTrust",
+    "demarche": "Guichet",
+    "documents": [
+     "CIN",
+     "ligne téléphonique à votre nom"
+    ],
+    "cost": "À vérifier",
+    "delay": "1 à 3 jours",
+    "dependsOn": [],
+    "condition": {
+     "q": "Q14",
+     "eq": "non"
+    },
+    "reminderText": "J+3",
+    "offsetDays": 3,
+    "toVerify": true
+   },
+   {
+    "id": "EI04",
+    "phase": "2. Choisir et réserver",
+    "title": "Réserver votre nom commercial ou votre enseigne",
+    "explanation": "Si vous exercez sous un nom commercial ou une enseigne, réservez-le sur la plateforme du RNE pour vérifier qu'il est libre.",
+    "why": "Protège votre nom et évite un conflit avec une entreprise existante.",
+    "organisme": "RNE",
+    "demarche": "En ligne",
+    "documents": [
+     "Jusqu'à 3 propositions de noms"
+    ],
+    "cost": "0 à 20 (à vérifier)",
+    "delay": "24 à 48 h",
+    "dependsOn": [
+     "EI03"
+    ],
+    "condition": null,
+    "reminderText": "J+2",
+    "offsetDays": 2,
+    "toVerify": true
+   },
+   {
+    "id": "EI05",
+    "phase": "2. Choisir et réserver",
+    "title": "Trouver votre local ou une domiciliation",
+    "explanation": "Vous devez justifier d'une adresse d'activité : local loué, local vous appartenant ou domiciliation.",
+    "why": "L'adresse est demandée pour la patente et l'immatriculation.",
+    "organisme": "Propriétaire · domiciliataire",
+    "demarche": "—",
+    "documents": [
+     "Contrat de bail, titre de propriété ou attestation de domiciliation"
+    ],
+    "cost": "Selon le loyer",
+    "delay": "1 à 4 semaines",
+    "dependsOn": [],
+    "condition": null,
+    "reminderText": "J+14",
+    "offsetDays": 14,
+    "toVerify": false
+   },
+   {
+    "id": "EI06",
+    "phase": "2. Choisir et réserver",
+    "title": "Légaliser et enregistrer le contrat de bail",
+    "explanation": "Faites légaliser les signatures du bail à la municipalité, puis enregistrez-le à la recette des finances.",
+    "why": "Un bail non enregistré n'est pas accepté comme justificatif d'adresse.",
+    "organisme": "Municipalité · Recette des finances",
+    "demarche": "Guichet",
+    "documents": [
+     "Contrat de bail signé",
+     "CIN"
+    ],
+    "cost": "À vérifier",
+    "delay": "1 à 2 jours",
+    "dependsOn": [
+     "EI05"
+    ],
+    "condition": {
+     "q": "Q8",
+     "eq": "a_louer"
+    },
+    "reminderText": "J+5",
+    "offsetDays": 5,
+    "toVerify": true
+   },
+   {
+    "id": "EI07",
+    "phase": "3. Autoriser",
+    "title": "Obtenir l'autorisation ou déposer le cahier des charges",
+    "explanation": "Si votre activité est réglementée, déposez la demande d'autorisation ou le cahier des charges signé auprès du ministère concerné.",
+    "why": "L'autorisation est demandée pour la patente et l'immatriculation.",
+    "organisme": "Ministère de tutelle",
+    "demarche": "Selon activité",
+    "documents": [
+     "Selon activité (diplôme, plan du local, attestations)"
+    ],
+    "cost": "Selon activité",
+    "delay": "Selon activité",
+    "dependsOn": [
+     "EI02"
+    ],
+    "condition": {
+     "q": "Q3",
+     "in": [
+      "oui",
+      "nsp"
+     ]
+    },
+    "reminderText": "J+15",
+    "offsetDays": 15,
+    "toVerify": true
+   },
+   {
+    "id": "EI08",
+    "phase": "4. Immatriculer",
+    "title": "Obtenir votre patente (déclaration d'existence)",
+    "explanation": "La déclaration d'existence, appelée patente, vous inscrit auprès des impôts. Depuis août 2026, elle se fait en ligne : vous téléchargez ensuite votre carte d'identification fiscale.",
+    "why": "Le matricule fiscal est obligatoire pour exercer et facturer.",
+    "organisme": "Direction générale des impôts",
+    "demarche": "En ligne",
+    "documents": [
+     "CIN",
+     "justificatif d'adresse",
+     "autorisation si activité réglementée"
+    ],
+    "cost": "À vérifier",
+    "delay": "À vérifier",
+    "dependsOn": [
+     "EI06",
+     "EI07"
+    ],
+    "condition": null,
+    "reminderText": "J+3",
+    "offsetDays": 3,
+    "toVerify": true
+   },
+   {
+    "id": "EI09",
+    "phase": "4. Immatriculer",
+    "title": "Choisir votre régime fiscal",
+    "explanation": "Avec votre comptable, choisissez entre le régime forfaitaire (simple, pour les petits chiffres d'affaires) et le régime réel (comptabilité complète).",
+    "why": "Le régime détermine vos impôts et vos obligations comptables.",
+    "organisme": "Expert-comptable · Administration fiscale",
+    "demarche": "—",
+    "documents": [
+     "Estimation du chiffre d'affaires"
+    ],
+    "cost": "Honoraires selon comptable",
+    "delay": "Au moment de la patente",
+    "dependsOn": [
+     "EI01"
+    ],
+    "condition": null,
+    "reminderText": "J+3",
+    "offsetDays": 3,
+    "toVerify": true
+   },
+   {
+    "id": "EI10",
+    "phase": "4. Immatriculer",
+    "title": "Immatriculer votre entreprise au RNE",
+    "explanation": "Déposez votre demande d'immatriculation de personne physique sur la plateforme du RNE. Depuis le 1er juillet 2026, le dépôt se fait uniquement en ligne.",
+    "why": "L'inscription au RNE est obligatoire pour tout commerçant ou professionnel.",
+    "organisme": "RNE",
+    "demarche": "En ligne",
+    "documents": [
+     "CIN",
+     "carte d'identification fiscale",
+     "justificatif d'adresse",
+     "autorisation si besoin"
+    ],
+    "cost": "À vérifier",
+    "delay": "24 à 48 h",
+    "dependsOn": [
+     "EI08"
+    ],
+    "condition": null,
+    "reminderText": "J+2",
+    "offsetDays": 2,
+    "toVerify": true
+   },
+   {
+    "id": "EI11",
+    "phase": "4. Immatriculer",
+    "title": "Télécharger l'extrait RNE",
+    "explanation": "L'extrait du registre prouve l'existence de votre entreprise. Il est demandé par la banque, les clients et les administrations.",
+    "why": "Nécessaire pour ouvrir le compte bancaire professionnel.",
+    "organisme": "RNE",
+    "demarche": "En ligne",
+    "documents": [],
+    "cost": "5 par extrait (à vérifier)",
+    "delay": "Immédiat",
+    "dependsOn": [
+     "EI10"
+    ],
+    "condition": null,
+    "reminderText": "J+1",
+    "offsetDays": 1,
+    "toVerify": true
+   },
+   {
+    "id": "EI12",
+    "phase": "4. Immatriculer",
+    "title": "Vous affilier à la CNSS comme travailleur non salarié",
+    "explanation": "En tant qu'entrepreneur individuel, vous cotisez au régime des travailleurs non salariés. Les services se font aussi en ligne avec l'identité numérique.",
+    "why": "Couverture maladie et retraite ; obligation légale.",
+    "organisme": "CNSS",
+    "demarche": "Guichet / en ligne",
+    "documents": [
+     "CIN",
+     "carte d'identification fiscale",
+     "extrait RNE"
+    ],
+    "cost": "Cotisations selon revenu",
+    "delay": "1 semaine",
+    "dependsOn": [
+     "EI11"
+    ],
+    "condition": null,
+    "reminderText": "J+15",
+    "offsetDays": 15,
+    "toVerify": true
+   },
+   {
+    "id": "EI13",
+    "phase": "4. Immatriculer",
+    "title": "Affilier votre entreprise à la CNSS comme employeur",
+    "explanation": "Dès le premier salarié, déclarez-vous employeur à la CNSS dans le mois qui suit l'embauche.",
+    "why": "Obligation légale ; protège vos salariés.",
+    "organisme": "CNSS",
+    "demarche": "Guichet / en ligne",
+    "documents": [
+     "Demande d'affiliation",
+     "extrait RNE",
+     "contrats de travail"
+    ],
+    "cost": "0",
+    "delay": "1 semaine",
+    "dependsOn": [
+     "EI11"
+    ],
+    "condition": {
+     "q": "Q10",
+     "ne": "non"
+    },
+    "reminderText": "J+30 après 1re embauche",
+    "offsetDays": 30,
+    "toVerify": true
+   },
+   {
+    "id": "EI14",
+    "phase": "4. Immatriculer",
+    "title": "Obtenir le code en douane",
+    "explanation": "Si vous importez ou exportez, vous devez obtenir un code en douane.",
+    "why": "Sans code en douane, pas de dédouanement de marchandises.",
+    "organisme": "Douane",
+    "demarche": "Guichet / en ligne",
+    "documents": [
+     "Extrait RNE",
+     "carte d'identification fiscale"
+    ],
+    "cost": "À vérifier",
+    "delay": "À vérifier",
+    "dependsOn": [
+     "EI11"
+    ],
+    "condition": {
+     "q": "Q11",
+     "ne": "non"
+    },
+    "reminderText": "J+7",
+    "offsetDays": 7,
+    "toVerify": true
+   },
+   {
+    "id": "EI15",
+    "phase": "5. Démarrer",
+    "title": "Ouvrir un compte bancaire professionnel",
+    "explanation": "Ouvrez un compte réservé à votre activité pour séparer vos finances personnelles et professionnelles.",
+    "why": "Facilite la comptabilité et les déclarations.",
+    "organisme": "Banque",
+    "demarche": "Guichet",
+    "documents": [
+     "CIN",
+     "extrait RNE",
+     "carte d'identification fiscale"
+    ],
+    "cost": "Selon la banque",
+    "delay": "1 à 3 jours",
+    "dependsOn": [
+     "EI11"
+    ],
+    "condition": null,
+    "reminderText": "J+5",
+    "offsetDays": 5,
+    "toVerify": true
+   },
+   {
+    "id": "EI16",
+    "phase": "5. Démarrer",
+    "title": "Organiser la facturation et la comptabilité",
+    "explanation": "Préparez un modèle de facture avec les mentions obligatoires (nom, matricule fiscal, identifiant RNE) et un classement de vos pièces.",
+    "why": "Des factures conformes et une comptabilité à jour évitent les pénalités.",
+    "organisme": "Vous-même · expert-comptable",
+    "demarche": "—",
+    "documents": [
+     "Modèle de facture"
+    ],
+    "cost": "Honoraires selon comptable",
+    "delay": "1 semaine",
+    "dependsOn": [
+     "EI09"
+    ],
+    "condition": null,
+    "reminderText": "J+7",
+    "offsetDays": 7,
+    "toVerify": true
+   },
+   {
+    "id": "EI17",
+    "phase": "5. Démarrer",
+    "title": "Noter vos échéances fiscales",
+    "explanation": "Selon votre régime, vous déclarez vos impôts chaque mois ou chaque trimestre, plus une déclaration annuelle de revenus. L'application vous les rappellera.",
+    "why": "Un retard de déclaration entraîne des pénalités.",
+    "organisme": "Administration fiscale",
+    "demarche": "En ligne",
+    "documents": [],
+    "cost": "0",
+    "delay": "—",
+    "dependsOn": [
+     "EI09"
+    ],
+    "condition": null,
+    "reminderText": "Selon le régime (date à confirmer)",
+    "offsetDays": null,
+    "toVerify": true
+   },
+   {
+    "id": "EI18",
+    "phase": "5. Démarrer",
+    "title": "Souscrire les assurances nécessaires",
+    "explanation": "Assurance du local et responsabilité civile professionnelle, plus les assurances propres à votre activité.",
+    "why": "Vous êtes responsable sur vos biens personnels : l'assurance vous protège.",
+    "organisme": "Assureur",
+    "demarche": "—",
+    "documents": [
+     "Extrait RNE",
+     "contrat de bail"
+    ],
+    "cost": "Selon contrat",
+    "delay": "1 semaine",
+    "dependsOn": [
+     "EI11"
+    ],
+    "condition": null,
+    "reminderText": "J+14",
+    "offsetDays": 14,
+    "toVerify": true
+   },
+   {
+    "id": "EI19",
+    "phase": "5. Démarrer",
+    "title": "Vérifier les conditions d'ouverture au public",
+    "explanation": "Si vous recevez du public, vérifiez les exigences de sécurité (protection civile), d'hygiène et les autorisations municipales.",
+    "why": "Une ouverture sans conformité peut entraîner une fermeture administrative.",
+    "organisme": "Municipalité · Protection civile",
+    "demarche": "Guichet",
+    "documents": [
+     "Plan du local",
+     "attestations selon activité"
+    ],
+    "cost": "À vérifier",
+    "delay": "À vérifier",
+    "dependsOn": [
+     "EI06"
+    ],
+    "condition": {
+     "q": "Q9",
+     "eq": "oui"
+    },
+    "reminderText": "J+14",
+    "offsetDays": 14,
+    "toVerify": true
+   }
+  ]
+ },
+ {
+  "code": "AE",
+  "name": "Auto-entrepreneur",
+  "subtitle": "Statut simplifié, chiffre d'affaires jusqu'à 75 000 DT",
+  "tasks": [
+   {
+    "id": "AE01",
+    "phase": "1. Préparer",
+    "title": "Vérifier que vous êtes éligible au statut",
+    "explanation": "Le statut est réservé aux Tunisiens qui exercent seuls, en personne physique, sans patente déjà ouverte, avec un chiffre d'affaires annuel prévu jusqu'à 75 000 DT.",
+    "why": "Si vous n'êtes pas éligible, il faut choisir l'entreprise individuelle ou une société.",
+    "organisme": "Vous-même",
+    "demarche": "—",
+    "documents": [
+     "CIN",
+     "estimation du chiffre d'affaires annuel"
+    ],
+    "cost": "0",
+    "delay": "1 jour",
+    "dependsOn": [],
+    "condition": null,
+    "reminderText": "J+2",
+    "offsetDays": 2,
+    "toVerify": false
+   },
+   {
+    "id": "AE02",
+    "phase": "1. Préparer",
+    "title": "Vérifier que votre activité figure sur la liste autorisée",
+    "explanation": "Seules certaines activités ouvrent droit au statut (services, artisanat, commerce, numérique…). Certaines professions libérales et l'agriculture peuvent être exclues.",
+    "why": "Une activité hors liste rend l'inscription impossible.",
+    "organisme": "autoentrepreneur.tn",
+    "demarche": "En ligne",
+    "documents": [
+     "Description précise de l'activité"
+    ],
+    "cost": "0",
+    "delay": "1 jour",
+    "dependsOn": [
+     "AE01"
+    ],
+    "condition": null,
+    "reminderText": "J+2",
+    "offsetDays": 2,
+    "toVerify": true
+   },
+   {
+    "id": "AE03",
+    "phase": "1. Préparer",
+    "title": "Obtenir votre identité numérique (Mobile ID)",
+    "explanation": "L'inscription se fait en ligne et demande une identité numérique liée à votre carte d'identité et à votre numéro de téléphone.",
+    "why": "Sans elle, impossible de vous inscrire sur la plateforme.",
+    "organisme": "Opérateur téléphonique / TunTrust",
+    "demarche": "Guichet",
+    "documents": [
+     "CIN",
+     "ligne téléphonique à votre nom"
+    ],
+    "cost": "À vérifier",
+    "delay": "1 à 3 jours",
+    "dependsOn": [],
+    "condition": {
+     "q": "Q14",
+     "eq": "non"
+    },
+    "reminderText": "J+3",
+    "offsetDays": 3,
+    "toVerify": true
+   },
+   {
+    "id": "AE04",
+    "phase": "2. S'inscrire",
+    "title": "S'inscrire sur la plateforme auto-entrepreneur",
+    "explanation": "Créez votre compte sur autoentrepreneur.tn, remplissez le formulaire et payez les frais de dossier par carte. Un formulaire papier existe aussi dans les bureaux d'emploi, les recettes des finances et les agences CNSS.",
+    "why": "C'est l'acte qui vous donne le statut légal d'auto-entrepreneur.",
+    "organisme": "Plateforme autoentrepreneur.tn",
+    "demarche": "En ligne",
+    "documents": [
+     "Identité numérique",
+     "carte de paiement",
+     "adresse en Tunisie"
+    ],
+    "cost": "10",
+    "delay": "15 jours maximum",
+    "dependsOn": [
+     "AE02",
+     "AE03"
+    ],
+    "condition": null,
+    "reminderText": "J+3",
+    "offsetDays": 3,
+    "toVerify": true
+   },
+   {
+    "id": "AE05",
+    "phase": "2. S'inscrire",
+    "title": "Récupérer votre carte d'auto-entrepreneur",
+    "explanation": "Une fois le dossier accepté, vous recevez la carte d'auto-entrepreneur, électronique ou papier. Elle porte votre identifiant et doit être renouvelée.",
+    "why": "La carte prouve votre statut auprès des clients, des banques et des administrations.",
+    "organisme": "Plateforme autoentrepreneur.tn",
+    "demarche": "En ligne",
+    "documents": [],
+    "cost": "0",
+    "delay": "Jusqu'à 15 jours",
+    "dependsOn": [
+     "AE04"
+    ],
+    "condition": null,
+    "reminderText": "J+15",
+    "offsetDays": 15,
+    "toVerify": true
+   },
+   {
+    "id": "AE06",
+    "phase": "3. Démarrer",
+    "title": "Ouvrir un compte bancaire ou postal dédié",
+    "explanation": "Utilisez un compte séparé pour encaisser uniquement les revenus de votre activité. Cela simplifie le suivi du chiffre d'affaires et les déclarations.",
+    "why": "Séparer vos revenus pro et perso évite les erreurs de déclaration.",
+    "organisme": "Banque · La Poste",
+    "demarche": "Guichet",
+    "documents": [
+     "CIN",
+     "carte d'auto-entrepreneur"
+    ],
+    "cost": "Selon la banque",
+    "delay": "1 à 3 jours",
+    "dependsOn": [
+     "AE05"
+    ],
+    "condition": null,
+    "reminderText": "J+7",
+    "offsetDays": 7,
+    "toVerify": true
+   },
+   {
+    "id": "AE07",
+    "phase": "3. Démarrer",
+    "title": "Préparer un modèle de facture conforme",
+    "explanation": "Vos factures doivent être numérotées et indiquer votre identifiant d'auto-entrepreneur. Vous ne facturez pas de TVA : indiquez-le sur la facture.",
+    "why": "Une facture incomplète peut être refusée par un client ou contestée.",
+    "organisme": "Vous-même",
+    "demarche": "—",
+    "documents": [
+     "Identifiant auto-entrepreneur",
+     "coordonnées"
+    ],
+    "cost": "0",
+    "delay": "1 jour",
+    "dependsOn": [
+     "AE05"
+    ],
+    "condition": null,
+    "reminderText": "J+7",
+    "offsetDays": 7,
+    "toVerify": true
+   },
+   {
+    "id": "AE08",
+    "phase": "3. Démarrer",
+    "title": "Tenir un registre simple de vos recettes",
+    "explanation": "Notez chaque encaissement (date, client, montant). Un tableau suffit. Suivez votre total pour ne pas dépasser 75 000 DT par an, soit environ 18 750 DT par trimestre.",
+    "why": "Le dépassement du plafond fait sortir du régime.",
+    "organisme": "Vous-même",
+    "demarche": "—",
+    "documents": [
+     "Tableau des recettes"
+    ],
+    "cost": "0",
+    "delay": "Continu",
+    "dependsOn": [
+     "AE05"
+    ],
+    "condition": null,
+    "reminderText": "Chaque mois",
+    "offsetDays": null,
+    "toVerify": true
+   },
+   {
+    "id": "AE09",
+    "phase": "4. Déclarer",
+    "title": "Déclarer votre chiffre d'affaires chaque trimestre",
+    "explanation": "Chaque trimestre, déclarez en ligne votre chiffre d'affaires et payez l'impôt forfaitaire (0,5 % du chiffre d'affaires) et votre cotisation sociale.",
+    "why": "Un oubli de déclaration peut entraîner l'exclusion du régime.",
+    "organisme": "Plateforme autoentrepreneur.tn",
+    "demarche": "En ligne",
+    "documents": [
+     "Total des recettes du trimestre",
+     "carte de paiement"
+    ],
+    "cost": "0,5 % du CA + cotisation CNSS",
+    "delay": "—",
+    "dependsOn": [
+     "AE08"
+    ],
+    "condition": null,
+    "reminderText": "J-7 avant chaque fin de trimestre",
+    "offsetDays": null,
+    "toVerify": true
+   },
+   {
+    "id": "AE10",
+    "phase": "4. Déclarer",
+    "title": "Vérifier votre couverture CNSS",
+    "explanation": "Votre cotisation (environ 7,5 % de deux tiers du SMIG, soit une vingtaine de dinars par mois) vous ouvre une couverture maladie et retraite. Vérifiez que vous êtes bien affilié.",
+    "why": "Sans cotisation à jour, pas de soins remboursés ni de droits à la retraite.",
+    "organisme": "CNSS",
+    "demarche": "En ligne",
+    "documents": [
+     "Carte d'auto-entrepreneur",
+     "CIN"
+    ],
+    "cost": "≈ 20 DT / mois",
+    "delay": "—",
+    "dependsOn": [
+     "AE05"
+    ],
+    "condition": null,
+    "reminderText": "J+30",
+    "offsetDays": 30,
+    "toVerify": true
+   },
+   {
+    "id": "AE11",
+    "phase": "4. Déclarer",
+    "title": "Payer la contribution locale annuelle",
+    "explanation": "Une contribution forfaitaire annuelle est due à la commune (montant plus élevé en zone communale). La première année suivant l'inscription en est exonérée.",
+    "why": "Obligation fiscale locale.",
+    "organisme": "Recette des finances / commune",
+    "demarche": "Guichet / en ligne",
+    "documents": [
+     "Carte d'auto-entrepreneur"
+    ],
+    "cost": "100 à 200 DT / an (à vérifier)",
+    "delay": "—",
+    "dependsOn": [
+     "AE05"
+    ],
+    "condition": null,
+    "reminderText": "Chaque année (date à confirmer)",
+    "offsetDays": null,
+    "toVerify": true
+   },
+   {
+    "id": "AE12",
+    "phase": "5. Évoluer",
+    "title": "Renouveler votre carte avant expiration",
+    "explanation": "La carte a une durée limitée. Demandez son renouvellement à temps sur la plateforme.",
+    "why": "Une carte expirée vous fait perdre le statut.",
+    "organisme": "Plateforme autoentrepreneur.tn",
+    "demarche": "En ligne",
+    "documents": [
+     "Carte actuelle"
+    ],
+    "cost": "À vérifier",
+    "delay": "À vérifier",
+    "dependsOn": [
+     "AE05"
+    ],
+    "condition": null,
+    "reminderText": "3 mois avant expiration",
+    "offsetDays": null,
+    "toVerify": true
+   },
+   {
+    "id": "AE13",
+    "phase": "5. Évoluer",
+    "title": "Préparer le passage à une entreprise si le plafond approche",
+    "explanation": "Si votre chiffre d'affaires approche 75 000 DT, préparez le passage vers l'entreprise individuelle ou une SUARL. L'application vous propose alors le parcours adapté.",
+    "why": "Dépasser le plafond sans anticiper entraîne une régularisation fiscale.",
+    "organisme": "Expert-comptable",
+    "demarche": "—",
+    "documents": [
+     "Registre des recettes"
+    ],
+    "cost": "Honoraires selon comptable",
+    "delay": "1 à 3 mois",
+    "dependsOn": [
+     "AE08"
+    ],
+    "condition": null,
+    "reminderText": "Dès 80 % du plafond",
+    "offsetDays": null,
+    "toVerify": true
+   }
+  ]
+ },
+ {
+  "code": "EC",
+  "name": "Entreprise communautaire",
+  "subtitle": "Projet collectif local ou régional",
+  "tasks": [
+   {
+    "id": "EC01",
+    "phase": "1. Préparer",
+    "title": "Vérifier que votre projet peut devenir une entreprise communautaire",
+    "explanation": "Une entreprise communautaire est un projet collectif à but de développement local. Depuis le décret-loi 2025-3 : entreprise locale avec au moins 10 membres d'une même délégation, ou régionale avec au moins 15 membres de plusieurs délégations d'un même gouvernorat.",
+    "why": "Le nombre et l'origine des membres décident du type d'entreprise.",
+    "organisme": "Vous-même · autorité de tutelle",
+    "demarche": "—",
+    "documents": [
+     "Liste des futurs membres et leur délégation"
+    ],
+    "cost": "0",
+    "delay": "1 à 2 semaines",
+    "dependsOn": [],
+    "condition": null,
+    "reminderText": "J+7",
+    "offsetDays": 7,
+    "toVerify": true
+   },
+   {
+    "id": "EC02",
+    "phase": "1. Préparer",
+    "title": "Réunir les apports pour le capital minimum",
+    "explanation": "Le capital minimum est de 5 000 DT pour une entreprise locale et 10 000 DT pour une entreprise régionale, réparti entre les membres.",
+    "why": "Sans capital suffisant, la constitution est impossible.",
+    "organisme": "Membres fondateurs",
+    "demarche": "—",
+    "documents": [
+     "Tableau des apports par membre"
+    ],
+    "cost": "5 000 à 10 000 DT de capital",
+    "delay": "Variable",
+    "dependsOn": [
+     "EC01"
+    ],
+    "condition": null,
+    "reminderText": "J+14",
+    "offsetDays": 14,
+    "toVerify": true
+   },
+   {
+    "id": "EC03",
+    "phase": "1. Préparer",
+    "title": "Former le comité fondateur et élire son président",
+    "explanation": "Réunissez les membres créateurs, élisez le président du comité et consignez l'élection dans un procès-verbal.",
+    "why": "Le comité porte toutes les démarches de création.",
+    "organisme": "Membres fondateurs",
+    "demarche": "—",
+    "documents": [
+     "Procès-verbal d'élection du président",
+     "CIN des membres"
+    ],
+    "cost": "0",
+    "delay": "1 jour",
+    "dependsOn": [
+     "EC01"
+    ],
+    "condition": null,
+    "reminderText": "J+7",
+    "offsetDays": 7,
+    "toVerify": true
+   },
+   {
+    "id": "EC04",
+    "phase": "1. Préparer",
+    "title": "Informer l'autorité de tutelle",
+    "explanation": "Signalez le projet à l'autorité de tutelle, qui veille au respect de la réglementation.",
+    "why": "Étape préalable obligatoire.",
+    "organisme": "Autorité de tutelle (gouvernorat)",
+    "demarche": "Guichet",
+    "documents": [
+     "PV d'élection",
+     "présentation du projet"
+    ],
+    "cost": "0",
+    "delay": "À vérifier",
+    "dependsOn": [
+     "EC03"
+    ],
+    "condition": null,
+    "reminderText": "J+7",
+    "offsetDays": 7,
+    "toVerify": true
+   },
+   {
+    "id": "EC05",
+    "phase": "2. Choisir et réserver",
+    "title": "Réserver le nom de l'entreprise",
+    "explanation": "Réservez le nom au RNE en précisant s'il s'agit d'une entreprise communautaire locale ou régionale.",
+    "why": "Le nom réservé est exigé pour l'acte constitutif.",
+    "organisme": "RNE",
+    "demarche": "En ligne",
+    "documents": [
+     "Propositions de noms",
+     "type (locale ou régionale)"
+    ],
+    "cost": "0 à 20 (à vérifier)",
+    "delay": "24 à 48 h",
+    "dependsOn": [
+     "EC04"
+    ],
+    "condition": null,
+    "reminderText": "J+2",
+    "offsetDays": 2,
+    "toVerify": true
+   },
+   {
+    "id": "EC06",
+    "phase": "3. Constituer",
+    "title": "Rédiger et faire approuver l'acte constitutif",
+    "explanation": "Rédigez l'acte constitutif à partir du modèle existant et faites-le approuver par tous les membres du comité. Il doit être déposé au greffe du tribunal avant toute souscription au capital.",
+    "why": "C'est le document fondateur de l'entreprise.",
+    "organisme": "Comité fondateur · greffe du tribunal de 1re instance",
+    "demarche": "Guichet",
+    "documents": [
+     "Projet d'acte constitutif approuvé",
+     "attestation de réservation du nom"
+    ],
+    "cost": "À vérifier",
+    "delay": "1 à 2 semaines",
+    "dependsOn": [
+     "EC05"
+    ],
+    "condition": null,
+    "reminderText": "J+14",
+    "offsetDays": 14,
+    "toVerify": true
+   },
+   {
+    "id": "EC07",
+    "phase": "3. Constituer",
+    "title": "Publier l'annonce de constitution",
+    "explanation": "Publiez une annonce au Journal officiel et dans deux quotidiens, dont un en arabe, avec le capital et les modalités de souscription. Affichez-la aussi à la mairie et à la délégation.",
+    "why": "La publication ouvre la souscription au public concerné.",
+    "organisme": "JORT · journaux · mairie",
+    "demarche": "Guichet",
+    "documents": [
+     "Texte de l'annonce"
+    ],
+    "cost": "À vérifier",
+    "delay": "1 à 2 semaines",
+    "dependsOn": [
+     "EC06"
+    ],
+    "condition": null,
+    "reminderText": "J+7",
+    "offsetDays": 7,
+    "toVerify": true
+   },
+   {
+    "id": "EC08",
+    "phase": "3. Constituer",
+    "title": "Organiser la souscription au capital",
+    "explanation": "Les participants s'inscrivent et leurs apports sont notés dans un carnet de souscription.",
+    "why": "Le carnet prouve qui est membre et combien chacun apporte.",
+    "organisme": "Comité fondateur",
+    "demarche": "—",
+    "documents": [
+     "Carnet de souscription",
+     "CIN des souscripteurs"
+    ],
+    "cost": "0",
+    "delay": "Variable",
+    "dependsOn": [
+     "EC07"
+    ],
+    "condition": null,
+    "reminderText": "J+14",
+    "offsetDays": 14,
+    "toVerify": true
+   },
+   {
+    "id": "EC09",
+    "phase": "3. Constituer",
+    "title": "Tenir l'assemblée générale constitutive",
+    "explanation": "Convoquez l'assemblée par annonce et affichage au moins 15 jours avant. Elle valide les souscripteurs, approuve le règlement intérieur, désigne un commissaire aux comptes et élit le conseil d'administration.",
+    "why": "L'assemblée fait naître les organes de l'entreprise.",
+    "organisme": "Membres",
+    "demarche": "—",
+    "documents": [
+     "Convocation",
+     "liste des souscripteurs",
+     "projet de règlement intérieur",
+     "PV de l'assemblée"
+    ],
+    "cost": "À vérifier",
+    "delay": "15 jours minimum après l'annonce",
+    "dependsOn": [
+     "EC08"
+    ],
+    "condition": null,
+    "reminderText": "J-3 avant l'assemblée",
+    "offsetDays": null,
+    "toVerify": true
+   },
+   {
+    "id": "EC10",
+    "phase": "3. Constituer",
+    "title": "Libérer la totalité du capital",
+    "explanation": "Versez l'intégralité du capital souscrit sur le compte de l'entreprise.",
+    "why": "Le capital doit être entièrement libéré avant l'immatriculation.",
+    "organisme": "Banque",
+    "demarche": "Guichet",
+    "documents": [
+     "PV de l'assemblée",
+     "carnet de souscription"
+    ],
+    "cost": "Selon la banque",
+    "delay": "1 à 3 jours",
+    "dependsOn": [
+     "EC09"
+    ],
+    "condition": null,
+    "reminderText": "J+5",
+    "offsetDays": 5,
+    "toVerify": true
+   },
+   {
+    "id": "EC11",
+    "phase": "4. Immatriculer",
+    "title": "Obtenir la carte d'identification fiscale",
+    "explanation": "Déposez la déclaration d'existence auprès des impôts et identifiez le bénéficiaire effectif.",
+    "why": "Le matricule fiscal est obligatoire pour exercer.",
+    "organisme": "Direction générale des impôts",
+    "demarche": "En ligne",
+    "documents": [
+     "Acte constitutif",
+     "PV de l'assemblée",
+     "justificatif du siège"
+    ],
+    "cost": "À vérifier",
+    "delay": "À vérifier",
+    "dependsOn": [
+     "EC10"
+    ],
+    "condition": null,
+    "reminderText": "J+3",
+    "offsetDays": 3,
+    "toVerify": true
+   },
+   {
+    "id": "EC12",
+    "phase": "4. Immatriculer",
+    "title": "Immatriculer l'entreprise au RNE",
+    "explanation": "Déposez le dossier complet, dont l'acte constitutif, sur la plateforme du RNE pour obtenir l'identifiant unique.",
+    "why": "L'immatriculation donne à l'entreprise son existence légale.",
+    "organisme": "RNE",
+    "demarche": "En ligne",
+    "documents": [
+     "Acte constitutif",
+     "PV de l'assemblée",
+     "carte fiscale",
+     "preuve de libération du capital"
+    ],
+    "cost": "À vérifier",
+    "delay": "À vérifier",
+    "dependsOn": [
+     "EC11"
+    ],
+    "condition": null,
+    "reminderText": "J+2",
+    "offsetDays": 2,
+    "toVerify": true
+   },
+   {
+    "id": "EC13",
+    "phase": "4. Immatriculer",
+    "title": "Déposer le système de gestion auprès de l'autorité compétente",
+    "explanation": "Déposez une copie du système de gestion et un extrait du registre auprès du gouverneur (entreprise locale) ou du ministère chargé de l'économie (entreprise régionale).",
+    "why": "Dernière étape légale de la constitution.",
+    "organisme": "Gouverneur · ministère de l'Économie",
+    "demarche": "Guichet",
+    "documents": [
+     "Système de gestion",
+     "extrait RNE"
+    ],
+    "cost": "0",
+    "delay": "À vérifier",
+    "dependsOn": [
+     "EC12"
+    ],
+    "condition": null,
+    "reminderText": "J+7",
+    "offsetDays": 7,
+    "toVerify": true
+   },
+   {
+    "id": "EC14",
+    "phase": "5. Démarrer",
+    "title": "Affilier l'entreprise et ses salariés à la CNSS",
+    "explanation": "Dès les premières embauches, l'entreprise s'affilie à la CNSS comme employeur.",
+    "why": "Obligation légale ; protège les salariés.",
+    "organisme": "CNSS",
+    "demarche": "Guichet / en ligne",
+    "documents": [
+     "Extrait RNE",
+     "liste du personnel",
+     "contrats"
+    ],
+    "cost": "0",
+    "delay": "1 semaine",
+    "dependsOn": [
+     "EC12"
+    ],
+    "condition": {
+     "q": "Q10",
+     "ne": "non"
+    },
+    "reminderText": "J+30 après 1re embauche",
+    "offsetDays": 30,
+    "toVerify": true
+   },
+   {
+    "id": "EC15",
+    "phase": "5. Démarrer",
+    "title": "Demander les avantages et le financement",
+    "explanation": "Les entreprises communautaires bénéficient d'exonérations fiscales, de prêts à taux préférentiel et d'un accès prioritaire à certaines terres agricoles de l'État. Montez le dossier avec la BTS et le gouvernorat.",
+    "why": "Ces avantages peuvent décider de la viabilité du projet.",
+    "organisme": "BTS · gouvernorat · administration fiscale",
+    "demarche": "Guichet",
+    "documents": [
+     "Extrait RNE",
+     "plan d'affaires",
+     "PV de l'assemblée"
+    ],
+    "cost": "0",
+    "delay": "À vérifier",
+    "dependsOn": [
+     "EC12"
+    ],
+    "condition": null,
+    "reminderText": "J+15",
+    "offsetDays": 15,
+    "toVerify": true
+   },
+   {
+    "id": "EC16",
+    "phase": "5. Démarrer",
+    "title": "Organiser la comptabilité et le commissaire aux comptes",
+    "explanation": "Mettez en place la comptabilité et fixez avec le commissaire aux comptes le calendrier des contrôles et de l'assemblée annuelle.",
+    "why": "Transparence obligatoire vis-à-vis des membres et de l'État.",
+    "organisme": "Expert-comptable · commissaire aux comptes",
+    "demarche": "—",
+    "documents": [
+     "PV de désignation du commissaire"
+    ],
+    "cost": "Honoraires",
+    "delay": "1 semaine",
+    "dependsOn": [
+     "EC12"
+    ],
+    "condition": null,
+    "reminderText": "J+15",
+    "offsetDays": 15,
+    "toVerify": true
+   }
+  ]
+ }
+]
